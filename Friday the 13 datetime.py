@@ -1,0 +1,35 @@
+import datetime
+#import date
+def has_friday_13(month, year):
+	X = datetime.datetime(year, month, 13)
+	#print(X.strftime('%A'))
+	return X.strftime('%A') == 'Friday'
+	
+	
+print(has_friday_13(3, 2020))# True)
+print(has_friday_13(10, 2017))# True)
+print(has_friday_13(1, 1985))# False)
+print(has_friday_13(5, 1619))# False)
+print(has_friday_13(6, 1614))# True)
+print(has_friday_13(8, 1767))# False)
+print(has_friday_13(6, 1589))# False)
+print(has_friday_13(2, 2015))# True)
+print(has_friday_13(3, 2015))# True)
+print(has_friday_13(11, 2015))# True)
+print(has_friday_13(2, 1759))# False)
+print(has_friday_13(8, 1612))# False)
+print(has_friday_13(8, 1612))# False)
+print(has_friday_13(10, 2029))# False)
+print(has_friday_13(1, 1590))# False)
+print(has_friday_13(7, 1812))# False)
+print(has_friday_13(1, 1785))# False)
+print(has_friday_13(11, 1961))# False)
+print(has_friday_13(9, 1706))# False)
+print(has_friday_13(5, 2016))# True)
+print(has_friday_13(11, 2020))# True)
+print(has_friday_13(1, 2023))# True)
+print(has_friday_13(10, 2023))# True)
+print(has_friday_13(2, 2043))# True)
+print(has_friday_13(4, 2043))# False)
+print(has_friday_13(3, 2043))# True)
+print(has_friday_13(11, 2043))# True)
